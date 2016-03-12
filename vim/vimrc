@@ -1,3 +1,4 @@
+set shell=/bin/bash
 set rtp+=~/go/misc/vim  " add golang support
 
 " -------- Bundles  ---------------------------------------{{{1
@@ -83,6 +84,9 @@ Bundle "klen/python-mode"
 Bundle "hynek/vim-python-pep8-indent"
 "jinja2 syntax
 Bundle "Glench/Vim-Jinja2-Syntax"
+"jedi"
+Bundle 'davidhalter/jedi-vim'
+""
 "--------------------------------------------------2}}}
 "----------- for coffee-script---------------------{{{2
 Bundle "vim-coffee-script"
