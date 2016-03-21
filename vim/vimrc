@@ -280,7 +280,10 @@ let g:molokai_original = 1
 let g:lightline = {'colorscheme': 'wombat',}
 " ------------------------------------------- }}}
 
-colorscheme blackboard
+"colorscheme blackboard
+"colorscheme jellybeans
+"colorscheme badwolf
+colorscheme solarized
 
 "背景:暗色
 set background=dark
