@@ -285,7 +285,9 @@ let g:ycm_confirm_extra_conf = 0
 "ctags will be installed to /usr/local/bin/ctags
 
 "use /usr/local/bin/ctags on mac
-let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
+"let Tlist_Ctags_Cmd="/usr/local/bin/ctags"
+"use /usr/local/bin/ctags on ubuntu
+let Tlist_Ctags_Cmd="/usr/bin/ctags"
 " 只显示当前文件的tag
 let Tlist_Show_One_File = 1
 "taglist是最后一个的时候退出vim
