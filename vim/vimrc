@@ -219,7 +219,8 @@ set shiftwidth=4
 "显示tab键
 set list
 "list键的填充字符
-set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+"set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
+set listchars=tab:▸\ ,extends:❯,precedes:❮
 
 "根据文件类型设定缩进,覆盖掉默认的~,来自humiaozuzu
 autocmd FileType php setlocal tabstop=2 shiftwidth=2 softtabstop=2 textwidth=120
