@@ -266,14 +266,15 @@ set cpt=.,w,b
 "- ------------------------ 插件配置 ----------------------------------------  {{{1
 
 " ---------------------------------  solarized {{{2
-" let g:solarized_termcolors=256  " 一定要这行在colorscheme solarized 之前
-" let g:solarized_termtrans=1
-" let g:solarized_contrast="high"
-" let g:solarized_visibility="high"
+"let g:solarized_termcolors=256  " 一定要这行在colorscheme solarized 之前
+"let g:solarized_termtrans=1
+"let g:solarized_contrast="high"
+"let g:solarized_visibility="high"
+"colorscheme solarized
 "-----------------------------------------------2}}}
 " --------------------------------- molokai {{{2
-" colorscheme molokai
-" let g:rehash256 = 1
+colorscheme molokai
+let g:rehash256 = 1
 let g:molokai_original = 1
 "-----------------------------------------------2}}}
 
@@ -284,7 +285,6 @@ let g:lightline = {'colorscheme': 'wombat',}
 "colorscheme blackboard
 "colorscheme jellybeans
 "colorscheme badwolf
-colorscheme solarized
 
 "背景:暗色
 set background=dark
