@@ -135,7 +135,8 @@ set showmode
 "关闭报警声音
 set noeb
 "开启鼠标定位
-set mouse=a
+" set mouse=a
+set mouse=v
 "关闭报警声音
 set noeb
 "外部修改后自动更新这个文件
@@ -160,7 +161,9 @@ set gdefault
 set hlsearch
 set incsearch
 
-set nowrap
+" 自动折行
+" set nowrap
+set wrap
 
 "状态栏
 set laststatus=2
@@ -236,7 +239,8 @@ autocmd FileType sass,scss,css setlocal tabstop=2 shiftwidth=2 softtabstop=2 tex
 "-------------------------------鼠标-------------------------
 
 "启用鼠标的使用
-set mouse=a
+" set mouse=a
+set mouse=v
 "可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
 set selection=exclusive
 set selectmode=mouse,key
@@ -266,16 +270,16 @@ set cpt=.,w,b
 "- ------------------------ 插件配置 ----------------------------------------  {{{1
 
 " ---------------------------------  solarized {{{2
-"let g:solarized_termcolors=256  " 一定要这行在colorscheme solarized 之前
-"let g:solarized_termtrans=1
-"let g:solarized_contrast="high"
-"let g:solarized_visibility="high"
-"colorscheme solarized
+let g:solarized_termcolors=256  " 一定要这行在colorscheme solarized 之前
+let g:solarized_termtrans=1
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
+colorscheme solarized
 "-----------------------------------------------2}}}
 " --------------------------------- molokai {{{2
-colorscheme molokai
-let g:rehash256 = 1
-let g:molokai_original = 1
+"colorscheme molokai
+"let g:rehash256 = 1
+"let g:molokai_original = 1
 "-----------------------------------------------2}}}
 
 "--------------------------------- lightline {{{2
