@@ -1,5 +1,6 @@
 set shell=/bin/bash
 set rtp+=~/go/misc/vim  " add golang support
+let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
 
 " -------- Bundles  ---------------------------------------{{{1
 "首先，加载vundle!
