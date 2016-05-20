@@ -1,6 +1,6 @@
 set shell=/bin/bash
 set rtp+=~/go/misc/vim  " add golang support
-let g:Tlist_Ctags_Cmd='/usr/bin/ctags'
+let g:Tlist_Ctags_Cmd='/usr/bin/vi_ctags'
 
 " -------- Bundles  ---------------------------------------{{{1
 "首先，加载vundle!
@@ -31,6 +31,7 @@ Bundle "itchyny/lightline.vim"
 
 "自动补全插件
 Bundle 'neocomplcache'
+Bundle 'Shougo/deoplete.nvim'
 "jsbeautify
 Bundle 'jsbeautify'
 "autoclose:自动关闭括号,[],{}等，自动光标置中
@@ -151,7 +152,7 @@ set cul
 "合适的高亮当前行的颜色
 hi CursorLine term=none cterm=none ctermbg=3
 "高亮当前列
-set cursorcolumn
+"set cursorcolumn
 "自动切换当前目录为当前文件所在目录
 set autochdir
 "800个字符以上的行不去高亮
@@ -299,6 +300,7 @@ hi Normal ctermbg=NONE
 
 "------------------------ neocomplcache插件:自动完成插件 {{{2
 let g:neocomplcache_enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 " ------------------------------------------------------- 2}}}
 
 " --------------------- Nerdtree:窗口浏览器:NERDTreeToggle {{{2
@@ -430,5 +432,9 @@ noremap wj <c-w><down>
 "
 autocmd BufWrite *.c :WS
 autocmd BufWrite *.h :WS
+autocmd BufReadPost *
+\ if line("'\"") >= 1 && line("'\"") <= line("$") |
+\   exe "normal! g`\"" |
+\ endif
 ":w!! to sudo write file
 cmap w!! w !sudo tee >/dev/null %
