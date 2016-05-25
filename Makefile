@@ -16,6 +16,8 @@ vim: submodule
 	cd vim/vundle ; git checkout master ; git pull;
 	mkdir -p ~/.vim/bundle/
 	ln $(LNSOPT) $(CURDIR)/vim/vimrc ~/.vimrc
+	ln $(LNSOPT) $(CURDIR)/vim/vimrc_ori ~/.vimrc_bak
+	ln $(LNSOPT) $(CURDIR)/vim/exchange_vimrc.sh ~/exchange_vimrc.sh
 	ln $(LNSOPT) $(CURDIR)/vim/vundle ~/.vim/bundle/vundle
 	vim -c "BundleInstall"
 
