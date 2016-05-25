@@ -7,3 +7,9 @@
 [submodule "z"]
 	path = z
 	url = git://github.com/rupa/z.git
+[submodule "item2-color-schemes"]
+	path = item2-color-schemes
+	url = git@github.com:mbadolato/iTerm2-Color-Schemes.git
+[submodule "zsh/fzf"]
+	path = zsh/fzf
+	url = git@github.com:junegunn/fzf.git
