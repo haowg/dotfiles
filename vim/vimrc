@@ -86,6 +86,8 @@ Bundle "klen/python-mode"
 Bundle "hynek/vim-python-pep8-indent"
 "jinja2 syntax
 Bundle "Glench/Vim-Jinja2-Syntax"
+"会覆盖python-mode
+"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 "jedi"
 Bundle 'davidhalter/jedi-vim'
 ""
