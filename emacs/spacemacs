@@ -26,7 +26,11 @@ values."
      auto-completion
      better-defaults
      emacs-lisp
+     imenu-list
+     dash
      git
+     github
+     chrome
      markdown
      org
      (shell :variables
@@ -36,6 +40,7 @@ values."
      syntax-checking
      version-control
      python
+     django
      ipython-notebook
      ;; chinese
      themes-megapack
@@ -43,10 +48,14 @@ values."
      yaml
      gtags
      html
+     nginx
      go
      javascript
      java
      ycmd
+     sql
+     restructuredtext
+     chinese
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
