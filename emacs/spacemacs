@@ -279,6 +279,9 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place you code here."
+  (setq-default dotspacemacs-configuration-layers '((chinese :variables
+                                                             chinese-enable-youdao-dict t)))
+  (spacemacs/set-leader-keys "oy" 'youdao-dictionary-search-at-point+)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
