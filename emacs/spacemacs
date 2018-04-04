@@ -42,7 +42,10 @@ values."
      python
      django
      ipython-notebook
-     ;; chinese
+     (chinese :packages youdao-dictionary fcitx
+              :variables chinese-enable-fcitx nil
+              chinese-enable-youdao-dict t)
+     nixos
      themes-megapack
      search-engine
      yaml
@@ -54,8 +57,7 @@ values."
      java
      ycmd
      sql
-     restructuredtext
-     chinese
+     syntax-checking
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -258,6 +260,10 @@ values."
    ))
 
 (defun dotspacemacs/user-init ()
+  (setq configuration-layer--elpa-archives
+    '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+      ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+      ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init', before layer configuration
 executes.
