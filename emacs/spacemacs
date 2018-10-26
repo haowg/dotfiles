@@ -135,8 +135,8 @@ values."
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '(
                                ;; "Source Code Pro"
-                               "Ubuntu Mono"
-                               :size 18
+                               "Monaco"
+                               :size 16
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
